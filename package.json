@@ -1,6 +1,6 @@
 {
   "name": "beautify-scroll",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Animate items on scroll",
   "main": "./dist/index.js",
   "scripts": {
