@@ -1,7 +1,7 @@
 {
   "name": "beautify-scroll",
-  "version": "1.0.2",
-  "description": "Animate items on scroll",
+  "version": "1.0.3",
+  "description": "A simple library that allows you to animate elements when they enter the viewport",
   "main": "./dist/index.js",
   "scripts": {
     "build": "webpack --entry ./src/index.js",

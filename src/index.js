@@ -66,13 +66,15 @@ class BeautifyScrollInstance {
         const blocks = []
 
         targets.forEach(item => {
-            const div = document.createElement('span')
+            const wrapper = document.createElement('span')
 
-            div.append(item)
+            wrapper.classList.add('scroll-item-wrapper')
 
-            container.append(div)
+            wrapper.append(item)
 
-            blocks.push(div)
+            container.append(wrapper)
+
+            blocks.push(wrapper)
         })
 
         return blocks
@@ -100,7 +102,7 @@ export const BeautifyScroll = {
              animationClassName = 'scroll-animated'
          }) {
 
-        if (!selector) throw 'I need items ! Put a "targets" key in options.'
+        if (!selector) throw 'I need items ! Put a "selector" key in options.'
         if (!document.querySelectorAll(selector).length) throw 'No items for ' + selector + ' selector'
 
         return new BeautifyScrollInstance({
